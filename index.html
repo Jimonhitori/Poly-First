@@ -61,6 +61,15 @@
     .subline { margin-top:3px; color:var(--muted); font-size:11px; }
     .stack-cell { white-space:normal; min-width:240px; }
     .raw-cell { white-space:normal; min-width:360px; font-family:Consolas,"Courier New",monospace; font-size:11px; }
+    .group-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(420px,1fr)); gap:10px; padding:12px; }
+    .group-card { border:1px solid var(--line); border-radius:8px; background:#fff; overflow:hidden; }
+    .group-card summary { cursor:pointer; list-style:none; display:flex; justify-content:space-between; gap:12px; padding:12px; align-items:center; }
+    .group-card summary::-webkit-details-marker { display:none; }
+    .group-card[open] summary { border-bottom:1px solid var(--line); background:#f8fafc; }
+    .group-title { font-weight:700; }
+    .group-meta { color:var(--muted); font-size:12px; white-space:nowrap; }
+    .mini-table { font-size:12px; }
+    .mini-table th, .mini-table td { padding:7px 8px; }
     textarea { width:100%; min-height:280px; border:1px solid var(--line); border-radius:8px; padding:10px; font-family:Consolas,"Courier New",monospace; font-size:12px; line-height:1.5; white-space:pre; }
     .copy-wrap { padding:12px; }
     .copy-grid-wrap { display:grid; grid-template-columns:minmax(0, 2.1fr) minmax(320px, .9fr); gap:12px; align-items:stretch; }
@@ -76,7 +85,7 @@
 <body>
   <header>
     <h1>Remaining x Entry x Signal/BPS Analysis</h1>
-    <p>生成時刻: 2026-06-13T00:34:01.674Z</p>
+    <p>生成時刻: 2026-06-13T00:47:40.072Z</p>
   </header>
   <main>
 <div class="stats">
@@ -718,6 +727,3352 @@
       </tr></tbody>
         </table>
       </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>カテゴリ別 Explorer: BTC/ETH x Entry帯</h2>
+        <p>BTC/ETHを分けて、entry帯ごとの上位候補だけを折りたたみ表示します。見たいentry帯だけ開いて確認します。</p>
+      </div>
+      <div class="group-list">
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 0.50-0.55</span>
+          <span class="group-meta">best +43.8% / 73.7% / n=19</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-50bps</td>
+        <td>19</td>
+        <td>73.7%</td>
+        <td><strong>+43.8%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-50bps</td>
+        <td>14</td>
+        <td>71.4%</td>
+        <td><strong>+39.9%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-70bps</td>
+        <td>17</td>
+        <td>70.6%</td>
+        <td><strong>+38.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-100bps</td>
+        <td>16</td>
+        <td>68.8%</td>
+        <td><strong>+34.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / &lt;0.50</span>
+          <span class="group-meta">best +19.4% / 58.3% / n=12</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>&lt;0.50</td>
+        <td>1h&lt;=-30bps</td>
+        <td>12</td>
+        <td>58.3%</td>
+        <td><strong>+19.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">ETH / 0.50-0.55</span>
+          <span class="group-meta">best +38.3% / 70.6% / n=17</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-30bps</td>
+        <td>17</td>
+        <td>70.6%</td>
+        <td><strong>+38.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-50bps</td>
+        <td>17</td>
+        <td>70.6%</td>
+        <td><strong>+38.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-70bps</td>
+        <td>13</td>
+        <td>69.2%</td>
+        <td><strong>+36.1%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-30bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+37.0%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-50bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+37.0%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">ETH / 0.65-0.70</span>
+          <span class="group-meta">best +18.4% / 80.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.65-0.70</td>
+        <td>5m&lt;=20bps</td>
+        <td>10</td>
+        <td>80.0%</td>
+        <td><strong>+18.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.65-0.70</td>
+        <td>5m&lt;=10bps</td>
+        <td>10</td>
+        <td>80.0%</td>
+        <td><strong>+18.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.65-0.70</td>
+        <td>5m&lt;=0bps</td>
+        <td>10</td>
+        <td>80.0%</td>
+        <td><strong>+18.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.65-0.70</td>
+        <td>5m&lt;=-10bps</td>
+        <td>10</td>
+        <td>80.0%</td>
+        <td><strong>+18.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.65-0.70</td>
+        <td>15m&lt;=20bps</td>
+        <td>10</td>
+        <td>80.0%</td>
+        <td><strong>+18.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>カテゴリ別 Explorer: BTC/ETH x BPS条件</h2>
+        <p>BTC/ETHを分けて、BPS下限条件ごとの上位候補を確認します。条件が強すぎてサンプルが薄いものを見分ける用途です。</p>
+      </div>
+      <div class="group-list">
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 4h&lt;=-50bps</span>
+          <span class="group-meta">best +43.8% / 73.7% / n=19</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-50bps</td>
+        <td>19</td>
+        <td>73.7%</td>
+        <td><strong>+43.8%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h+4h&lt;=-50bps</span>
+          <span class="group-meta">best +39.9% / 71.4% / n=14</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-50bps</td>
+        <td>14</td>
+        <td>71.4%</td>
+        <td><strong>+39.9%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 4h&lt;=-70bps</span>
+          <span class="group-meta">best +38.3% / 70.6% / n=17</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-70bps</td>
+        <td>17</td>
+        <td>70.6%</td>
+        <td><strong>+38.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 4h&lt;=-100bps</span>
+          <span class="group-meta">best +34.4% / 68.8% / n=16</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-100bps</td>
+        <td>16</td>
+        <td>68.8%</td>
+        <td><strong>+34.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m&lt;=-20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=-20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=-20bps</td>
+        <td>20</td>
+        <td>65.0%</td>
+        <td><strong>+26.8%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h&lt;=-20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 4h&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 4h&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 4h&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 4h&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 4h&lt;=-20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 4h&lt;=-30bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-30bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-30bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-30bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m+30m&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m+30m&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m+30m&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m+30m&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h+4h&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h+4h&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h+4h&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h+4h&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h+4h&lt;=-20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m+30m&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m+30m&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m+30m&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m+30m&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m+30m+1h&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m+30m+1h&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m+30m+1h&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m+30m+1h&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h+4h&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h+4h&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h+4h&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=0bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h+4h&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=-10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m+30m+1h+4h&lt;=20bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=20bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m+30m+1h+4h&lt;=10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=10bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m+30m+1h+4h&lt;=0bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=0bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=0bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m+30m+1h+4h&lt;=-10bps</span>
+          <span class="group-meta">best +36.3% / 70.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=-10bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=-10bps</td>
+        <td>22</td>
+        <td>63.6%</td>
+        <td><strong>+24.2%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m&lt;=-20bps</span>
+          <span class="group-meta">best +34.1% / 69.2% / n=13</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=-20bps</td>
+        <td>13</td>
+        <td>69.2%</td>
+        <td><strong>+34.1%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m&lt;=-20bps</span>
+          <span class="group-meta">best +34.1% / 69.2% / n=13</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m&lt;=-20bps</td>
+        <td>13</td>
+        <td>69.2%</td>
+        <td><strong>+34.1%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m+30m&lt;=-20bps</span>
+          <span class="group-meta">best +34.1% / 69.2% / n=13</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m&lt;=-20bps</td>
+        <td>13</td>
+        <td>69.2%</td>
+        <td><strong>+34.1%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m+15m+30m+1h+4h&lt;=-20bps</span>
+          <span class="group-meta">best +34.1% / 69.2% / n=13</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m+15m+30m+1h+4h&lt;=-20bps</td>
+        <td>13</td>
+        <td>69.2%</td>
+        <td><strong>+34.1%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h&lt;=-30bps</span>
+          <span class="group-meta">best +30.1% / 66.7% / n=21</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-30bps</td>
+        <td>21</td>
+        <td>66.7%</td>
+        <td><strong>+30.1%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>&lt;0.50</td>
+        <td>1h&lt;=-30bps</td>
+        <td>12</td>
+        <td>58.3%</td>
+        <td><strong>+19.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-30bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 1h+4h&lt;=-30bps</span>
+          <span class="group-meta">best +30.1% / 66.7% / n=21</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-30bps</td>
+        <td>21</td>
+        <td>66.7%</td>
+        <td><strong>+30.1%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-30bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h&lt;=-30bps</span>
+          <span class="group-meta">best +23.5% / 63.2% / n=19</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=-30bps</td>
+        <td>19</td>
+        <td>63.2%</td>
+        <td><strong>+23.5%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=-30bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h+4h&lt;=-30bps</span>
+          <span class="group-meta">best +23.5% / 63.2% / n=19</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=-30bps</td>
+        <td>19</td>
+        <td>63.2%</td>
+        <td><strong>+23.5%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=-30bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m+30m&lt;=-20bps</span>
+          <span class="group-meta">best +22.9% / 63.2% / n=19</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m&lt;=-20bps</td>
+        <td>19</td>
+        <td>63.2%</td>
+        <td><strong>+22.9%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m+30m+1h&lt;=-20bps</span>
+          <span class="group-meta">best +22.9% / 63.2% / n=19</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m+30m+1h&lt;=-20bps</td>
+        <td>19</td>
+        <td>63.2%</td>
+        <td><strong>+22.9%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m&lt;=-20bps</span>
+          <span class="group-meta">best +20.6% / 61.9% / n=21</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=-20bps</td>
+        <td>21</td>
+        <td>61.9%</td>
+        <td><strong>+20.6%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=-20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h&lt;=-20bps</span>
+          <span class="group-meta">best +20.6% / 61.9% / n=21</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=-20bps</td>
+        <td>21</td>
+        <td>61.9%</td>
+        <td><strong>+20.6%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h&lt;=-20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m+1h+4h&lt;=-20bps</span>
+          <span class="group-meta">best +20.6% / 61.9% / n=21</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=-20bps</td>
+        <td>21</td>
+        <td>61.9%</td>
+        <td><strong>+20.6%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m+1h+4h&lt;=-20bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 15m&lt;=-30bps</span>
+          <span class="group-meta">best +19.1% / 61.1% / n=18</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>15m&lt;=-30bps</td>
+        <td>18</td>
+        <td>61.1%</td>
+        <td><strong>+19.1%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 30m&lt;=-30bps</span>
+          <span class="group-meta">best +6.3% / 54.5% / n=11</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="neutral">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>30m&lt;=-30bps</td>
+        <td>11</td>
+        <td>54.5%</td>
+        <td><strong>+6.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">ETH / 1h&lt;=-30bps</span>
+          <span class="group-meta">best +38.3% / 70.6% / n=17</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-30bps</td>
+        <td>17</td>
+        <td>70.6%</td>
+        <td><strong>+38.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-30bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+37.0%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">ETH / 1h&lt;=-50bps</span>
+          <span class="group-meta">best +38.3% / 70.6% / n=17</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-50bps</td>
+        <td>17</td>
+        <td>70.6%</td>
+        <td><strong>+38.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-50bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+37.0%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">ETH / 1h&lt;=-70bps</span>
+          <span class="group-meta">best +36.1% / 69.2% / n=13</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-70bps</td>
+        <td>13</td>
+        <td>69.2%</td>
+        <td><strong>+36.1%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">ETH / 5m&lt;=20bps</span>
+          <span class="group-meta">best +18.4% / 80.0% / n=10</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.65-0.70</td>
+        <td>5m&lt;=20bps</td>
+        <td>10</td>
+        <td>80.0%</td>
+        <td><strong>+18.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=20bps</td>
+        <td>19</td>
+        <td>63.2%</td>
+        <td><strong>+23.7%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=20bps</td>
+        <td>11</td>
+        <td>63.6%</td>
+        <td><strong>+24.5%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>カテゴリ別 Explorer: BTC/ETH x Signal stack</h2>
+        <p>BTC/ETHを分けて、5m/15m/30m/1h/4h stackごとの上位候補を確認します。hard reject候補探しにも使います。</p>
+      </div>
+      <div class="group-list">
+      <details class="group-card">
+        <summary>
+          <span class="group-title">BTC / 5m:M 15m:M 30m:M 1h:M 4h:M</span>
+          <span class="group-meta">best +43.8% / 73.7% / n=19</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-50bps</td>
+        <td>19</td>
+        <td>73.7%</td>
+        <td><strong>+43.8%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h+4h&lt;=-50bps</td>
+        <td>14</td>
+        <td>71.4%</td>
+        <td><strong>+39.9%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-70bps</td>
+        <td>17</td>
+        <td>70.6%</td>
+        <td><strong>+38.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>4h&lt;=-100bps</td>
+        <td>16</td>
+        <td>68.8%</td>
+        <td><strong>+34.4%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN 5</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>5m&lt;=20bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+36.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details>
+      <details class="group-card">
+        <summary>
+          <span class="group-title">ETH / 5m:M 15m:M 30m:M 1h:M 4h:M</span>
+          <span class="group-meta">best +38.3% / 70.6% / n=17</span>
+        </summary>
+        <div class="table-wrap">
+          <table class="compact-table mini-table">
+            <thead><tr><th>side/th</th><th>rem</th><th>entry</th><th>BPS</th><th>n</th><th>勝率</th><th>ROI</th><th>stack</th></tr></thead>
+            <tbody>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-30bps</td>
+        <td>17</td>
+        <td>70.6%</td>
+        <td><strong>+38.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-50bps</td>
+        <td>17</td>
+        <td>70.6%</td>
+        <td><strong>+38.3%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-70bps</td>
+        <td>13</td>
+        <td>69.2%</td>
+        <td><strong>+36.1%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-30bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+37.0%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr>
+      <tr class="good">
+        <td>DOWN 3</td>
+        <td>240-300</td>
+        <td>0.50-0.55</td>
+        <td>1h&lt;=-50bps</td>
+        <td>10</td>
+        <td>70.0%</td>
+        <td><strong>+37.0%</strong></td>
+        <td class="stack-cell">5m:M 15m:M 30m:M 1h:M 4h:M</td>
+      </tr></tbody>
+          </table>
+        </div>
+      </details></div>
     </section>
 
     <section>
